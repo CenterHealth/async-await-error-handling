@@ -4,14 +4,14 @@
 	(global.awaitTo = factory());
 }(this, (function () { 'use strict';
 
-function awaitTo(promise) {
+function to(promise) {
     return promise.then(function (data) {
-        return [null, data];
+        return [undefined, data];
     }).catch(function (err) {
-        return [err, null];
+        return [err, undefined];
     });
 }
 
-return awaitTo;
+return to;
 
 })));

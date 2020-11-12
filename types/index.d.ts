@@ -1,1 +1,1 @@
-export default function awaitTo<T>(promise: Promise<T>): Promise<T[] | Error[]>;
+export default function to<T>(promise: Promise<T>): Promise<T[] | Error[]>;

@@ -12,14 +12,14 @@ async function fn() {
 test('should return a number', async (t) => {
     t.plan(2);
     const [err, res] = await awaitTo(n());
-    t.is(err, null);
+    t.is(err, undefined);
     t.is(res, 1);
 });
 
 test('should return a string', async (t) => {
     t.plan(2);
     const [err, res] = await awaitTo(s());
-    t.is(err, null);
+    t.is(err, undefined);
     t.is(res, '2');
 });
 
@@ -27,5 +27,5 @@ test('should return errors', async (t) => {
     t.plan(2);
     const [err, res] = await awaitTo(f());
     t.is(err.message, 'Error');
-    t.is(res, null);
+    t.is(res, undefined);
 });
