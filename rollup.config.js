@@ -7,7 +7,7 @@ import builtins from 'rollup-plugin-node-builtins';
 export default {
     entry: 'src/index.ts',
     format: 'umd',
-    moduleName: 'awaitTo',
+    moduleName: 'to',
     dest: 'dist/index.js',
     plugins: [
         builtins(),

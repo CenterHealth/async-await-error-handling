@@ -16,7 +16,7 @@ config.plugins.push(
 export default {
     entry: 'src/index.ts',
     format: 'umd',
-    moduleName: 'awaitTo',
+    moduleName: 'to',
     dest: 'dist/index.min.js',
     plugins: config.plugins
 };
